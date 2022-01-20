@@ -1,0 +1,262 @@
+.catalog
+	.title
+		margin-bottom 58px
+	&__wrap
+		df()
+		aifs()
+		jcsb()
+	&__inner
+		width 100%
+	&__setup
+		df()
+		aic()
+		jcsb()
+		margin-bottom 37px
+		padding 32px 41px
+		background #F4F4F4
+		border-radius 3px
+	.product_count
+	.sort
+		font-size 16px
+		line-height 20px
+		color #7E838C
+		b
+			font-size 500px
+			margin-right 10px
+			font-size 18px
+			color _dark
+	.sort
+		df()
+		aic()
+		jcfe()
+		cursor pointer
+		user-select none
+		b
+			margin-right 0
+			margin-left 10px
+			font-size 16px
+			letter-spacing .2px
+		.icon
+			margin-left 18px
+
+.cards
+	df()
+	fww()
+	margin -17px
+.card
+	por()
+	df()
+	fdc()
+	aic()
+	max-width 354px
+	margin 17px
+	margin-bottom 18px
+	padding 14px 30px 31px 29px
+	border-radius 2px
+	overflow hidden
+	background-color _white
+	transition .5s
+	&:hover
+	&:focus
+		box-shadow 0 0 15px 0 #e3e3e3
+	&__link
+		poa()
+		top 0
+		right 0
+		bottom 0
+		left 0
+		z-index 1
+	&__tags
+		poa()
+		top 0
+		left 0
+		z-index 3
+	&__tag
+		df()
+		aic()
+		jcc()
+		padding 10px 21px 11px 17px
+		font-weight 500
+		font-size 15px
+		line-height 1
+		.icon
+			margin-right 13px
+	.discount
+		color _white
+		background-color #F31B4F
+	&__img
+		por()
+		df()
+		aic()
+		jcc()
+		margin-bottom 30px
+		img
+			db()
+			poa()
+			top 50%
+			left 50%
+			max-width 100%
+			max-height 100%
+			transform translate(-50%,-50%)
+	&__title
+		margin-top auto
+		margin-bottom 44px
+		font-weight 500
+		font-size 16px
+		line-height 25px
+	&__prices
+		df()
+		aic()
+		jcfs()
+		width 100%
+		margin-top auto
+		padding-right 60px
+		padding-left 2px
+	&__price
+		df()
+		aifs()
+		margin-right 23px
+		font-weight 600
+		font-size 20px
+		line-height 25px
+		span
+			font-size 13px
+			margin-left 6px
+		&_old
+			por()
+			font-weight 500
+			font-size 15px
+			line-height 1
+			color #7E838C
+			&:after
+				content ''
+				poa()
+				top 2px
+				left 50%
+				width 130%
+				height 1px
+				background-color #F31B4F
+				transform rotate(-9.99deg) translateX(-50%)
+			span
+				font-size 8px
+	.addToCard
+		poa()
+		bottom 0
+		right 0
+		df()
+		aic()
+		jcc()
+		width 82px
+		height 82px
+		padding 0
+		border none
+		background-color #38D3E8
+		z-index 2
+		&:hover
+		&:focus
+			svg
+				transform scale(1.5)
+
+.open_filter
+	df()
+	aic()
+	jcc()
+	font-size 16px
+	font-weight 600
+	line-height 20px
+	letter-spacing 0.02em
+	padding 0
+	border none
+	background none
+	outline none
+	.icon
+		margin-right 9px
+
+@media(max-width: 480px)
+	.catalog
+		.title
+			margin-bottom 67px
+			font-size 25px
+			line-height 35px
+		&__setup
+			por()
+			padding 34px 21px
+		.product_count
+			poa()
+			top -51px
+			left 3px
+		.sort
+			margin-left auto
+			b
+				margin 0
+			.icon
+				margin-top 4px
+				margin-left 15px
+	.cards
+		margin -8px
+		margin-bottom 37px
+	.card
+		max-width 179px
+		margin 8px
+		padding 4px 20px 10px 17px
+		&__img
+			margin-bottom 16px
+		&__title
+			font-size 14px
+			line-height 19px
+			margin 0 0 22px
+			display: -webkit-box;
+			-webkit-line-clamp: 3;
+			-webkit-box-orient: vertical;
+			height 59px
+			overflow hidden
+		&__prices
+			padding-left 0
+			padding-right 0
+		&__price
+			font-size 16px
+			margin-right 17px
+			span
+				font-size 11px
+				margin-left 3px
+			&_old
+				font-size 12px
+				line-height 11px
+				margin 0
+				&:after
+					width 120%
+				span
+					font-size 7px
+					margin-left 2px
+		&__tag
+			padding 10px 13px 7px 8px
+		.addToCard
+			width 43px
+			height 43px
+			.icon
+				width 20px
+				svg
+					width 100%
+			&:hover
+				svg
+					transform scale(1.2)
+		.discount
+			font-size 12px
+			.icon
+				width 11px
+				margin-right 11px
+				svg
+					width 100%
+					height auto
+
+
+@media(max-width: 413px)
+	.cards
+		fdc()
+		
+		margin-left 0
+		margin-right 0
+	.card
+		max-width 100%
+		margin-left 0
+		margin-right 0

@@ -1,0 +1,24 @@
+mixin card(options)
+	.card
+		a.card__link(href=options.href)
+		if(options.tags)
+			.card__tags
+				if(options.tags.discount)
+					.card__tag.discount
+						.icon
+							include ../svg/ic_percent.svg
+						span Акция
+		.card__img
+			.sizer
+				include ../svg/288x293.svg
+			img(src=options.image alt= options.title)
+		.card__title= options.title
+		.card__prices
+			.card__price= options.price
+				span ₽
+			if(options.oldPrice)
+				.card__price.card__price_old= options.oldPrice
+					span ₽
+		button(type="button" title="В корзину!").addToCard
+			.icon
+				include ../svg/ic_addToCard.svg

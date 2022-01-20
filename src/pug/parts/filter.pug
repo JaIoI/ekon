@@ -1,0 +1,199 @@
+form.filter
+	.title Фильтры
+	fieldset
+		legend
+			| Отопительное оборудование
+			.icon
+				include ../svg/ic_drop.svg
+		label
+			input(type="checkbox" checked).visually-hidden
+			span.checkbox.checkbox_default
+			span.text Радиаторы отопления
+		label
+			input(type="checkbox").visually-hidden
+			span.checkbox.checkbox_default
+			span.text Конвекторы отопления
+		label
+			input(type="checkbox").visually-hidden
+			span.checkbox.checkbox_default
+			span.text Полотенцесушители
+		label
+			input(type="checkbox").visually-hidden
+			span.checkbox.checkbox_default
+			span.text Арматура для радиаторов
+
+	fieldset
+		legend
+			| Бренд
+			.icon
+				include ../svg/ic_drop.svg
+		label
+			input(type="checkbox").visually-hidden
+			span.checkbox.checkbox_default
+			span.text Purmo
+		label
+			input(type="checkbox").visually-hidden
+			span.checkbox.checkbox_default
+			span.text Irsap
+		label
+			input(type="checkbox").visually-hidden
+			span.checkbox.checkbox_default
+			span.text Terma
+		label
+			input(type="checkbox").visually-hidden
+			span.checkbox.checkbox_default
+			span.text Loten
+		label
+			input(type="checkbox").visually-hidden
+			span.checkbox.checkbox_default
+			span.text Guardo
+
+	fieldset.price_fieldset
+		legend
+			| Цена
+			.icon
+				include ../svg/ic_drop.svg
+		.price_slider
+			input(type="hidden")#price_from
+			input(type="hidden")#price_to
+			#price_slider
+			.values
+				.price_from
+				.price_to
+	fieldset
+		legend
+			| Количество секций
+			.icon
+				include ../svg/ic_drop.svg
+		label
+			input(type="checkbox").visually-hidden
+			span.checkbox.checkbox_default
+			span.text 4
+		label
+			input(type="checkbox").visually-hidden
+			span.checkbox.checkbox_default
+			span.text 6
+		label
+			input(type="checkbox").visually-hidden
+			span.checkbox.checkbox_default
+			span.text 8
+		label
+			input(type="checkbox").visually-hidden
+			span.checkbox.checkbox_default
+			span.text 12
+
+	fieldset
+		legend
+			| Межосетевое расстояние
+			.icon
+				include ../svg/ic_drop.svg
+		label
+			input(type="checkbox").visually-hidden
+			span.checkbox.checkbox_default
+			span.text 20 см
+		label
+			input(type="checkbox").visually-hidden
+			span.checkbox.checkbox_default
+			span.text 35 см
+		label
+			input(type="checkbox").visually-hidden
+			span.checkbox.checkbox_default
+			span.text 50 см
+
+	fieldset
+		legend
+			| Площадь отопления
+			.icon
+				include ../svg/ic_drop.svg
+		label
+			input(type="checkbox").visually-hidden
+			span.checkbox.checkbox_default
+			span.text Более 19 м²
+		label
+			input(type="checkbox").visually-hidden
+			span.checkbox.checkbox_default
+			span.text Менее 8 м²
+		label
+			input(type="checkbox").visually-hidden
+			span.checkbox.checkbox_default
+			span.text от 10 до 14 м²
+		label
+			input(type="checkbox").visually-hidden
+			span.checkbox.checkbox_default
+			span.text от 15 до 26 м²
+
+	fieldset.colors
+		legend
+			| Цвет
+			.icon
+				include ../svg/ic_drop.svg
+		label
+			input(type="checkbox").visually-hidden
+			span.checkbox.checkbox_color.checkbox_red
+			span.color_text Красный
+			span.icon
+				include ../svg/ic_clear_S.svg
+		label
+			input(type="checkbox").visually-hidden
+			span.checkbox.checkbox_color.checkbox_yellow
+			span.color_text Жёлтый
+			span.icon
+				include ../svg/ic_clear_S.svg
+		label
+			input(type="checkbox").visually-hidden
+			span.checkbox.checkbox_color.checkbox_green
+			span.color_text Зеленый
+			span.icon
+				include ../svg/ic_clear_S.svg
+		label
+			input(type="checkbox").visually-hidden
+			span.checkbox.checkbox_color.checkbox_blue
+			span.color_text Синий
+			span.icon
+				include ../svg/ic_clear_S.svg
+		label
+			input(type="checkbox").visually-hidden
+			span.checkbox.checkbox_color.checkbox_violet
+			span.color_text Фиолетовый
+			span.icon
+				include ../svg/ic_clear_S.svg
+		label
+			input(type="checkbox").visually-hidden
+			span.checkbox.checkbox_color.checkbox_pink
+			span.color_text Розовый
+			span.icon
+				include ../svg/ic_clear_S.svg
+		label
+			input(type="checkbox").visually-hidden
+			span.checkbox.checkbox_color.checkbox_beige
+			span.color_text Бежевый
+			span.icon
+				include ../svg/ic_clear_S.svg
+		label
+			input(type="checkbox").visually-hidden
+			span.checkbox.checkbox_color.checkbox_white
+			span.color_text Белый
+			span.icon
+				include ../svg/ic_clear_S.svg
+		label
+			input(type="checkbox").visually-hidden
+			span.checkbox.checkbox_color.checkbox_black
+			span.color_text Чёрный
+			span.icon
+				include ../svg/ic_clear_S.svg
+		label
+			input(type="checkbox").visually-hidden
+			span.checkbox.checkbox_color.checkbox_grey
+			span.color_text Серый
+			span.icon
+				include ../svg/ic_clear_S.svg
+
+	.filter__bottom
+		a(href="#").btn.btn_accent.btn_arrows.mob_show.filter_setup
+			span.icon
+				include ../svg/ic_btn_arrows.svg
+			| Применить
+		button(type="button").filter__clear
+			span Сбросить
+			.icon
+				include ../svg/ic_clear.svg

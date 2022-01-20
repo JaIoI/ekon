@@ -1,0 +1,16 @@
+extends pug/base
+
+append vars
+	- title = 'Каталог'
+block body-start
+	include pug/parts/header
+block content
+	main
+		include pug/parts/banner
+		include pug/parts/crumbs
+		include pug/parts/catalog
+		include pug/parts/seo_text
+
+block body-end
+	include pug/parts/footer
+	include pug/parts/popup_menu

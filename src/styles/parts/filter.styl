@@ -1,0 +1,333 @@
+.filter
+	por()
+	width 100%
+	max-width 355px
+	margin-right 35px
+	padding 29px 31px 50px 29px
+	background-color #F4F4F4
+	border-radius 3px
+	&__clear
+		poa()
+		top 28px
+		right 26px
+		df()
+		aic()
+		jcc()
+		padding 5px
+		font-weight 500
+		font-size 16px
+		line-height 20px
+		color #7E838C
+		border none
+		outline none
+		background none
+		.icon
+			margin-top 3px
+			margin-left 13px
+		&:hover
+			.icon
+				transform rotate(90deg)
+	.title
+		margin-bottom 59px
+		font-weight 500
+		font-size 22px
+		line-height 28px
+
+	fieldset
+		df()
+		fdc()
+		aifs()
+		margin 0
+		padding 0
+		border none
+		+ fieldset
+			margin-top 61px
+
+	legend
+		df()
+		aic()
+		jcsb()
+		width 100%
+		margin-bottom 26px
+		padding 0
+		font-weight 500
+		font-size 18px
+		line-height 23px
+		cursor pointer
+		user-select none
+		.icon
+			transform rotate(180deg)
+	label
+		por()
+		df()
+		aic()
+		cursor pointer
+		user-select none
+		+ label
+			margin-top 16px
+		span
+			flex-shrink 0
+			transition color .3s
+		.text
+			por()
+			letter-spacing -0.6px
+			color inherit
+			&:after
+				underline()
+				bottom 2px
+				background-color _dark
+		&:hover
+		&:focus
+			.text
+				&:after
+					underline_active()
+
+
+.values
+	df()
+	aic()
+	jcsb()
+	margin-top 15px
+	font-weight 500
+	font-size 14px
+	line-height 1
+	user-select none
+	span
+		font-size 10px
+		line-height 12px
+	div
+		df()
+		aifs()
+
+.checkbox
+	dib()
+	width 100%
+	width 16px
+	min-height 16px
+	margin-right 20px
+	background _white
+	transition .3
+
+input:checked
+	~
+		.text
+			font-weight 500
+		.checkbox.checkbox_default
+			background url(../img/ic_checked.svg) center _white no-repeat
+
+.colors
+	label
+		.icon
+			margin-left 17px
+			opacity 0
+		+ label
+			margin-top 22px
+		.color_text
+			por()
+			font-size 15px
+			line-height 1
+			color #7E838C
+			&:after
+				underline()
+				bottom 0
+				background-color #7E838C
+		&:hover
+		&:focus
+			.color_text
+				&:after
+					underline_active()
+
+.checkbox
+	&_color
+		width 10px
+		min-height 10px
+		margin-left 3px
+		margin-right 23px
+		border-radius 50%
+
+	&_red
+		background _red
+	&_yellow
+		background _yellow
+	&_green
+		background _green
+	&_grey
+		background _grey
+	&_violet
+		background _violet
+	&_blue
+		background _blue
+	&_pink
+		background _pink
+	&_beige
+		background _beige
+	&_white
+		background _white
+		border-color _grey
+	&_black
+		background _black
+input:checked ~
+	.checkbox_color
+		outline 2px solid _white
+		box-shadow 2px 7px 10px rgba(142, 148, 170, .45)
+		background-image unset
+		&.checkbox_white
+			outline-color _grey
+	.color_text
+		font-weight 500
+		color _dark
+	.icon
+		opacity 1
+
+.price_slider
+	width 100%
+	margin-top 3px
+	margin-bottom 5px
+
+.noUi-target
+	background none
+	border-radius 2px
+	border none
+	box-shadow none
+.noUi-horizontal
+	height 21px
+	&:after
+		content ''
+		position absolute
+		top 9px
+		left 0
+		right 0
+		height 3px
+		background #DEE1E8
+.noUi-connect
+	background none
+	&:after
+		content ''
+		position absolute
+		top 9px
+		left 0
+		right 0
+		height 3px
+		background #38D3E8
+
+.noUi-horizontal .noUi-handle
+	width 40px
+	height 40px
+	right -20px
+	top -9px
+	background none
+	&:after
+		top 50%
+		left 50%
+		transform translate(-50%,-50%)
+		width 3px
+		height 18px
+		background #38D3E8
+	&:before
+		content none
+
+.noUi-handle
+	border none
+	border-radius 2px
+	background #38D3E8
+	box-shadow none
+	cursor grab
+
+.hidden
+	legend
+		margin 0 !important
+		.icon
+			transform rotate(0deg)
+	label
+	.price_slider
+		height 0
+		margin-top 0
+		margin-bottom 0
+		line-height 0
+		opacity 0
+		*
+			height 0
+			margin-top 0
+			margin-bottom 0
+			min-width 0
+			line-height 0
+			opacity 0
+	label + label
+			margin 0
+.filter
+	.hidden + fieldset
+		margin-top 30px
+
+
+
+@media(max-width: 480px)
+	.filter
+		pof()
+		top 0
+		left -1000px
+		bottom -100px
+		max-width 100%
+		height calc(100vh + 100px)
+		padding 62px 22px 255px 21px
+		overflow-y auto
+		z-index -1
+		opacity 0
+		&.active
+			left 0
+			z-index 8
+			opacity 1
+		.title
+			margin-bottom 46px
+			font-size 25px
+			line-height 32px
+		legend
+			margin-bottom 37px
+			font-size 20px
+			line-height 25px
+		label
+			+ label
+				margin-top 22px
+			.color_text
+			.text
+				font-size 18px
+				line-height 23px
+				letter-spacing normal
+				&:after
+					content none
+
+		&__bottom
+			pof()
+			bottom 0
+			left 0
+			right 0
+			df()
+			aic()
+			jcsb()
+			padding 28px 22px
+			background-color _white
+			z-index 3
+		.btn
+			max-width 203px
+			height 54px
+		&__clear
+			position static
+
+
+	.checkbox
+		width 25px
+		min-height 25px
+		&_color
+			width 12px
+			min-height 12px
+			margin-left 6px
+			margin-right 30px
+	.colors
+		label + label
+			margin-top 24px
+	
+	.values
+		font-size 18px
+		line-height 23px
+	.hidden
+		label + label
+			margin 0

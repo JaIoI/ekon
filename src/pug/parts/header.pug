@@ -1,0 +1,57 @@
+header.header
+	.wrap
+		.header__top
+			button.burger(type="button")
+				.icon.mob_hide
+					include ../svg/ic_burger.svg
+				.icon.mob_show
+					include ../svg/ic_burger_mob.svg
+			a(href="#").logo
+				.logo__img
+					include ../svg/logo_img.svg
+				.logo__inner
+					include ../svg/logo_text.svg
+					.text Энергосберегающие  технологии
+			form.search
+				label
+					.search__ic
+						include ../svg/ic_search.svg
+					input(type="search" placeholder="Поиск товаров..")
+			.header__links
+				a.mob_show(href="tel:+74955063650")
+					.icon
+						include ../svg/ic_phone_mob.svg
+				a.mob_hide(href="#" title="Доставка")
+					include ../svg/ic_delivery.svg
+				a.user_setup(href="#" title="Профиль")
+					.icon.mob_hide
+						include ../svg/ic_user.svg
+					.icon.mob_show
+						include ../svg/ic_user_mob.svg
+				a(href="#" title="Корзина")
+					.icon.mob_hide
+						include ../svg/ic_cart.svg
+					.icon.mob_show
+						include ../svg/ic_cart_mob.svg
+					.count.mob_hide 3
+		.header__bottom
+			a(href="#")
+				.icon
+					include ../svg/ic_location.svg
+				.text Екатеринбург
+			a(href="tel:+74955063650")
+				.icon
+					include ../svg/ic_phone.svg
+				.text +7 (495) 506-36-50
+			a(href="mailto:office@uconerfo.ru")
+				.icon
+					include ../svg/ic_mail.svg
+				.text office@uconerfo.ru
+			a(href="#")
+				.icon
+					include ../svg/ic_pen.svg
+				.text Заявка на расчет
+			a(href="#")
+				.icon
+					include ../svg/ic_contacts.svg
+				.text Контакты

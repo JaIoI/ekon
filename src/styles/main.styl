@@ -1,0 +1,257 @@
+@import 'parts/vars'
+@import 'parts/fonts'
+
+*
+*:before
+*:after
+	box-sizing border-box
+	-webkit-tap-highlight-color rgba(0, 0, 0, 0)
+	transition .3s
+
+
+html
+body
+	margin 0
+	padding 0
+
+body
+	font-family "Euclid Circular A", sans-serif
+	font-style normal
+	font-weight normal
+	font-size 16px
+	line-height 120%
+	color _dark
+	background-color #FBFBFB
+	overflow-x hidden
+	-webkit-text-size-adjust none
+	&.ofh
+		overflow hidden
+
+
+.visually-hidden
+	poa()
+	clip rect(0 0 0 0)
+	width 1px
+	height 1px
+	margin -1px
+
+textarea
+	resize vertical
+input[type=search]
+	-webkit-appearance none
+	&:focus
+		box-shadow none
+
+input[type=search]::-webkit-search-cancel-button
+	display none
+	-webkit-appearance none
+
+input:not([type=checkbox]):not([type=radio]),
+textarea,
+select
+	-webkit-appearance none
+button,
+input,
+textarea
+	font-family inherit
+
+input
+	&::placeholder
+		color #73737B
+		opacity 1
+		transition opacity .3s ease
+	&:focus::placeholder
+		opacity 0
+
+button
+	cursor pointer
+	color inherit
+
+.btn
+	df()
+	aic()
+	jcc()
+	width 100%
+	max-width 282px
+	height 78px
+	padding 20px
+	font-size 19px
+	font-weight 500
+	border none
+	outline none
+	border-radius 2px
+	tdn()
+	&_accent
+		background-color #38D3E8
+		color _white
+	&_light
+		color _dark
+		background-color _white
+		svg path
+			stroke #38D3E8
+		&:hover
+		&:focus
+			box-shadow 0 0 10px 0 rgba(255,255,255,.5)
+	.icon
+		poa()
+		top 50%
+		left 49px
+		transform translateY(-50%)
+	&_arrows
+		por()
+		jcfe()
+		padding-right 50px
+		&:hover
+		&:focus
+			.icon
+				transform translate(10px, -50%)
+
+.wrap
+	max-width 1560px
+	margin 0 auto
+	padding 0 20px
+
+a
+	color inherit
+
+
+
+.logo
+	df()
+	aic()
+	margin-right 72px
+	tdn()
+	img
+		db()
+		width auto
+	svg
+		db()
+		height auto
+	&__img
+		margin-right 18px
+	.text
+		margin-top 11px
+		font-size 13px
+		line-height 1
+		color #555
+		letter-spacing 0.1px
+
+.icon
+	dib()
+	svg
+		db()
+.sizer
+	svg
+		db()
+		width 100%
+		height auto
+.title
+	font-weight 500
+	&_L
+		font-size 40px
+		line-height 1.32
+.crumbs
+	margin-bottom 65px
+	ul
+		df()
+		aic()
+		fww()
+		margin 0
+		padding 0
+		list-style none
+		li
+			color #858A93
+			+ li
+				margin-left 7px
+				&:before
+					content "/"
+					margin-right 6px
+		a
+			letter-spacing -0.6px
+			tdn()
+			&.active
+				font-weight 500
+				color _dark
+
+.seo
+	margin 189px 0
+	&_text
+		max-width 1095px
+		margin 0 auto
+		font-weight 300
+		font-size 16px
+		line-height 26px
+		div
+			margin-top 50px
+			margin-bottom 28px
+			font-size 22px
+			line-height 26px
+			font-weight 500
+			&:first-child
+				margin-bottom 48px
+				font-size 35px
+				line-height 44px
+		p
+			margin 26px 0
+
+
+.view_more
+	por()
+	margin-left auto
+	margin-right auto
+	font-size 15px
+	line-height 28px
+	padding 0
+	border none
+	background none
+	&:after
+		underline()
+		width 100%
+		bottom 1px
+		opacity 1
+		height 2px
+		background-color _dark
+	&:hover:after
+		opacity 0
+		width 0
+
+.mob_show
+	display none !important
+@media (max-width:480px)
+	.mob_show
+		display flex !important
+	.mob_hide
+		display none !important
+	.btn
+		max-width 232px
+		height 54px
+		font-size 15px
+		&_arrows
+			padding-right 43px
+			.icon
+				left 26px
+
+	.logo
+		margin-right auto
+		svg
+			width 100%
+		&__img
+			width 23px
+			margin-right 10px
+		&__inner
+			width 154px
+		.text
+			dn()
+	.btn
+		.icon
+			width 35px
+			svg
+				width 100%
+
+
+@import 'parts/header'
+@import 'parts/banner'
+@import 'parts/catalog'
+@import 'parts/filter'
+@import 'parts/footer'
+@import 'parts/popup'

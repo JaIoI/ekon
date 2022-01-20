@@ -1,0 +1,56 @@
+.popup.popup_menu
+	.popup__content
+		button.popup__close(type="button")
+			include ../svg/ic_close.svg
+		.wrap
+			a(href="#").logo
+				.logo__img
+					include ../svg/logo_img.svg
+				.logo__inner
+					include ../svg/logo_text.svg
+			nav.nav
+				ul.categories
+					li.category.hidden
+						.category__top.category__drop
+							.icon
+								include ../svg/ic_category1.svg
+							.title Отопительное оборудование
+							.icon.icon_drop
+								include ../svg/ic_drop.svg
+						ul
+							li
+								a(href="#") Радиаторы отопления
+							li
+								a(href="#") Конвекторы отопления
+							li
+								a(href="#") Полотенцесушители
+							li
+								a(href="#") Арматура для радиаторов и конвектеров
+					li.category
+						a.category__top(href="#")
+							.icon
+								include ../svg/ic_category2.svg
+							.title Комплектация объектов сантехникой
+					li.category
+						a.category__top(href="#")
+							.icon
+								include ../svg/ic_category3.svg
+							.title Дозаторы антисептика и стойки для диспенсера
+					li.category
+						a.category__top(href="#")
+							.icon
+								include ../svg/ic_category4.svg
+							.title Водосберегающая сантехника
+				ul.sitenav
+					li
+						a(href="#") Наше производство
+					li
+						a(href="#") Готовые решения
+					li
+						a(href="#") О компании
+					li
+						a(href="#") Доставка и оплата
+					li
+						a(href="#") Сертификаты
+					li
+						a(href="#") Новости
